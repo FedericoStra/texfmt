@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article} 
+
+\usepackage{amsmath,amsthm}
+\usepackage{xcolor}
+\usepackage[linkcolor=blue!50!black,colorlinks]{hyperref}
+\usepackage{cleveref}
+
+\newtheorem{theorem}{Theorem}
+
+\let\d\undefined
+\newcommand{\d}{\mathop{}\!\mathrm{d}}
+
+\title{Vim\TeX{} test}
+\author{Federico Stra}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Example document to experiment using Vim\TeX{}/\LaTeX{}Tools.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}\label{sec:intro}
+
+\begin{equation}\label{eq:basic}
+	(1+1) + 1 = 1 + (1+1) % very simple
+\end{equation}
+
+% very important
+\begin{theorem}[Euler]\label{thm:euler}
+\begin{equation}\label{eq:euler}
+	e^{2\pi i} = -1
+\end{equation}
+\end{theorem}
+
+\begin{equation}
+\alpha + \beta + \beta = \pi
+\end{equation}
+
+\[
+	\int_0^\infty f(x) \d x
+\]
+
+\section{Conclusions}
+\Cref{sec:intro}, \cref{thm:euler}, \eqref{eq:basic} and \eqref{eq:euler}.
+
+\end{document}
