@@ -9,5 +9,5 @@ fn tokenize_all() {
     let_assert!(Ok((rest, tokens)) = result);
     check!(rest.is_empty());
     check!(!tokens.is_empty());
-    check!(tokens.len() == 287);
+    check!(tokens.len() == 286);
 }
